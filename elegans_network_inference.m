@@ -3,7 +3,7 @@
 
 clear
 
-%% Load the downloaded dataset and choose a time-series
+%% Load the downloaded dataset and choose a particular time-series
 load WT_NoStim
 x=WT_NoStim(5);
 
@@ -162,7 +162,7 @@ function states = reservoir_layer(A, win, input, resparams)
 
 states = zeros(resparams.N, resparams.train_length);
 for i = 1:resparams.train_length-1
-    states(:,i+1) = (1-resparams.leakage)*states(:,i)+resparams.leakage*tanh(A*states(:,i) + win*input(:,i));
+    states(:,i+1) = (1-resparams.leakage)*states(:,i)+resparams.leakage*tanh(A*states(:,i) + win*input(:,i)+resparams.bias);
 end
 end
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
