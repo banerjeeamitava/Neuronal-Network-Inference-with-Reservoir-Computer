@@ -5,7 +5,7 @@ This repository contains a sample time series dataset and a minimal example of a
 
 These codes are associated with the paper "Network inference from short, noisy, low time-resolution, partial measurements: Application to *C. elegans* neuronal calcium dynamics" by Amitava Banerjee, Sarthak Chandra, and Edward Ott, published in the Proceedings of the National Academy of Sciences (PNAS).
 
-Source of the time series dataset: https://osf.io/na4f9, Whole brain imaging data from Kato et al., Cell (2015): Global Brain Dynamics Embed the Motor Command Sequence of *Caenorhabditis elegans*, https://pubmed.ncbi.nlm.nih.gov/26478179/. The time series downloaded from this link is stored as WT_NoStim.mat (its original name) in the same directory as the code.
+Source of the time series dataset: https://osf.io/na4f9, Whole brain imaging data from Kato et al., Cell (2015): Global Brain Dynamics Embed the Motor Command Sequence of *Caenorhabditis elegans*, https://pubmed.ncbi.nlm.nih.gov/26478179/. **This repository does not contain the time series dataset. The time series dataset must be downloaded from the database at https://osf.io/na4f9 separately by the user and stored as WT_NoStim.mat (its original name) in the same directory as the code, for the code to run.**
 
 Source of the ground truth neuronal connectivity of *C. elegans*: https://www.wormatlas.org/neuronalwiring.html#Connectivitydata . We folded over the left-right neuron pairs as described in the manuscript. The connectivity is stored as a binary matrix J0.mat in the same directory as the code. The matrix is 8-by-8, corresponding to 8 neurons in the order ["AVA","SMDV","RIV","RIM","SMDD","AIB","RIB","AVB"].
 
